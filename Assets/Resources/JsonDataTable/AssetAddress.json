@@ -1,0 +1,21 @@
+{
+  "AssetAddressDatas": {
+    "Cube": "Assets/Resource/Cube.prefab",
+    "sword": "Assets/Resource/sword.png",
+    "broom": "Assets/Resource/broom.png",
+    "Fireball": "Assets/Resource/Prefab/Projectile/Fireball.prefab",
+    "Flameball": "Assets/Resource/Prefab/Projectile/Flameball.prefab",
+    "Knight_Mode_UI": "Assets/Resource/Sprite/UISprite/Knight_Mode_UI.png",
+    "Mage_Mode_UI": "Assets/Resource/Sprite/UISprite/Mage_Mode_UI.png",
+    "Hp_UI": "Assets/Resource/Sprite/UISprite/Hp_UI.png",
+    "Hp_UI_Del": "Assets/Resource/Sprite/UISprite/Hp_UI_Del.png",
+    "Meteor": "Assets/Resource/Prefab/Projectile/Meteor.prefab",
+    "TimeStop": "Assets/Resource/Prefab/Projectile/TimeStop.prefab",
+    "Game_Clear_UI": "Assets/Resource/Sprite/UISprite/Game_Clear_UI.png",
+    "Game_Over_UI": "Assets/Resource/Sprite/UISprite/Game_Over_UI.png",
+    "Hit_vfx": "Assets/Resource/VFX/PlayerVFX/Hit_vfx/Hit_vfx/Holy hit.prefab",
+    "Ozmagicmove_vfx": "Assets/Resource/VFX/PlayerMageVFX/Ozmagicmove111_VFX/Ozmagicmove_vfx/Ozmagicmove_vfx.prefab",
+    "MeteorExplosion": "Assets/Resource/Prefab/Projectile/Explosion/MeteorExplosion.prefab",
+    "TimeStopSkybox": "Assets/Resource/Material/TimeStopSkybox.mat"
+  }
+}

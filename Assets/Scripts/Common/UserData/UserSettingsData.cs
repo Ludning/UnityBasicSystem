@@ -9,12 +9,12 @@ public class UserSettingsData : IUserData
     
     public void SetDefaultData()
     {
-        Logger.Log($"{GetType()::SetDefaultData}");
+        Logger.Log($"{GetType()}::SetDefaultData");
         Sound = true;
     }
     public bool LoadData()
     {
-        Logger.Log($"{GetType()::LoadData}");
+        Logger.Log($"{GetType()}::LoadData");
 
         bool result = false;
 
@@ -33,7 +33,7 @@ public class UserSettingsData : IUserData
     }
     public bool SaveData()
     {
-        Logger.Log($"{GetType()::SaveData}");
+        Logger.Log($"{GetType()}::SaveData");
         
         bool result = false;
 

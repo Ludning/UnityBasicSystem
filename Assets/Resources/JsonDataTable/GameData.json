@@ -1,0 +1,56 @@
+{
+  "PcDatas": {
+    "C101": {
+      "ID": "C101",
+      "description": "법사모드 오즈",
+      "pcType": "wizard",
+      "pcHp": 5,
+      "pcBasePower": 1.0,
+      "pcMoveSpeed": 15.0,
+      "moveSet": "a1",
+      "skillSet": "a1",
+      "ozMagicSet": "a",
+      "resourceID": "R101",
+      "pcIgnoreColTime": 1.0
+    },
+    "C102": {
+      "ID": "C102",
+      "description": "검사모드 오즈",
+      "pcType": "swordman",
+      "pcHp": 5,
+      "pcBasePower": 1.0,
+      "pcMoveSpeed": 15.0,
+      "moveSet": "a2",
+      "skillSet": "a2",
+      "ozMagicSet": "-",
+      "resourceID": "R101",
+      "pcIgnoreColTime": 1.0
+    }
+  },
+  "EnemyDatas": {
+    "C1001": {
+      "ID": "C1001",
+      "description": "적A(보행)",
+      "enemyMoveType": "movetype_enemy_walking",
+      "enemyAttackType": "atttype_enemy_melee",
+      "enemyHp": 30.0,
+      "enemyBasePower": 1.0,
+      "enemyMoveSpeed": 1.0,
+      "moveSet": "",
+      "skillSet": "b",
+      "enemyColDamage": 1.0
+    },
+    "C1002": {
+      "ID": "C1002",
+      "description": "적B(비행)",
+      "enemyMoveType": "movetype_enemy_flying",
+      "enemyAttackType": "atttype_enemy_melee",
+      "enemyHp": 30.0,
+      "enemyBasePower": 1.0,
+      "enemyMoveSpeed": 1.0,
+      "moveSet": "",
+      "skillSet": "c",
+      "enemyColDamage": 1.0
+    }
+  }
+}

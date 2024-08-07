@@ -10,13 +10,12 @@ public class UserGoodsData : IUserData
     
     public void SetDefaultData()
     {
-        Logger.Log($"{GetType()::SetDefaultData}");
+        Logger.Log($"{GetType()}::SetDefaultData");
         Gold = 0;
     }
-
     public bool LoadData()
     {
-        Logger.Log($"{GetType()::LoadData}");
+        Logger.Log($"{GetType()}::LoadData");
 
         bool result = false;
 
@@ -33,9 +32,24 @@ public class UserGoodsData : IUserData
         }
         return result;
     }
-
     public bool SaveData()
     {
-        
+        Logger.Log($"{GetType()}::SaveData");
+
+        bool result = false;
+
+        try
+        {
+            PlayerPrefs.SetString("Gold", Gold.ToString());
+            //PlayerPrefs.Save();
+            result = true;
+            
+            Logger.Log($"Gold:{Gold}");
+        }
+        catch (Exception e)
+        {
+            Logger.Log($"Load failed ({e.Message})");
+        }
+        return result;
     }
 }
