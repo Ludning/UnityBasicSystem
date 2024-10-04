@@ -14,4 +14,9 @@ public class PcData : IDataRepository
     public string ozMagicSet;
     public string resourceID;
     public float pcIgnoreColTime;
+    
+    public void FromCsv(string[] values)
+    {
+        
+    }
 }

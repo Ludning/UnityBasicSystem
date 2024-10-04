@@ -13,7 +13,7 @@ public class DataTableManager : SingletonBehaviour<DataTableManager>
     //private const string CSV_DATA_TABLE_NAME = "ChapterDataTable";
     //private const string JSON_DATA_TABLE_NAME = "ChapterDataTable";
 
-    private Dictionary<Type, object> dataDictionary = new Dictionary<Type, object>();
+    private Dictionary<string, object> dataDictionary = new Dictionary<string, object>();
     
     /*private GameData GameData;
     private Dictionary<string, IUserData> UserDatas;
@@ -29,9 +29,9 @@ public class DataTableManager : SingletonBehaviour<DataTableManager>
 
     private void LoadCsvDataTable<T>(string dataPath, string dataTableName)
     {
-        var parsedDataTable = CSVReader.Read($"{CSV_DATA_PATH}/{dataTableName}");
+        var parsedDataTable = CSVReader.Read<T>($"{CSV_DATA_PATH}/{dataTableName}");
 
-        foreach (var data in parsedDataTable)
+        /*foreach (var data in parsedDataTable)
         {
             var chapterData = new ChapterData
             {
@@ -43,7 +43,7 @@ public class DataTableManager : SingletonBehaviour<DataTableManager>
 
             ChapterDataTable.Add(chapterData);
         }
-        dataDictionary.Add();
+        dataDictionary.Add();*/
     }
     private void LoadJsonDataTable<T>(string dataPath, string dataTableName)
     {
@@ -51,7 +51,6 @@ public class DataTableManager : SingletonBehaviour<DataTableManager>
         var parsedDataTable = JsonConvert.DeserializeObject<T>(jsonFile.text);
 
     }
-
     public ChapterData GetData<T>(string key)
     {
         if (dataDictionary.TryGetValue(typeof(T), out var value))
@@ -60,12 +59,4 @@ public class DataTableManager : SingletonBehaviour<DataTableManager>
         
         //return ChapterDataTable.Where(item => item.ChapterNo == chapterNo).FirstOrDefault();
     }
-}
-
-public class ChapterData
-{
-    public int ChapterNo;
-    public int TotalStages;
-    public int ChapterRewardGem;
-    public int ChapterRewardGold;
 }
